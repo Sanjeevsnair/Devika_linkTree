@@ -127,6 +127,14 @@
             box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
         }
 
+
+.floating-card:focus,
+.floating-card:active {
+  background-color: transparent; /* Prevents background changes on hover/focus/active */
+  color: inherit; /* Ensures color remains consistent */
+  /* Add other properties to reset or customize as needed */
+}
+
         /* Card positions with overlaps */
         .card-1 { top: 5%; left: 15%; animation: float1 4s ease-in-out infinite; }
         .card-2 { top: 5%; right: 15%; animation: float2 5s ease-in-out infinite; }
@@ -309,7 +317,20 @@
             .floating-card {
                 width: 130px;
                 padding: 10px 10px;
+                 -webkit-tap-highlight-color: transparent;
             }
+
+            .floating-card:hover {
+            background: transparent
+        }
+
+
+.floating-card:focus,
+.floating-card:active {
+  background-color: transparent; /* Prevents background changes on hover/focus/active */
+  color: inherit; /* Ensures color remains consistent */
+  /* Add other properties to reset or customize as needed */
+}
             
             .card-icon {
                 width: 35px;
